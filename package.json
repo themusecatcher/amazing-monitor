@@ -1,0 +1,39 @@
+{
+  "name": "amazing-monitor",
+  "version": "1.0.0",
+  "private": false,
+  "description": "",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "default": {
+        "import": "./index.js",
+        "default": "./index.js"
+      }
+    },
+    "./lib/control/*": "./lib/control/*",
+    "./package.json": "./package.json"
+  },
+  "type": "module",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/themusecatcher/amazing-monitor"
+  },
+  "keywords": [
+    "amazing",
+    "log",
+    "monitor"
+  ],
+  "author": "The Muse Catcher",
+  "license": "ISC",
+  "dependencies": {
+    "clone-deep": "^4.0.1",
+    "lodash-es": "^4.17.21"
+  }
+}
